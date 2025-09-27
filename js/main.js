@@ -57,29 +57,10 @@
                 $('.hero-video-bg').addClass('video-fallback');
             });
             
-            // Enable video interaction on mobile
+            // Mobile video optimization
             if (window.innerWidth <= 768) {
-                // Add click to play on mobile
-                $('.hero-video-bg').on('click', function() {
-                    if (heroVideo.paused) {
-                        heroVideo.play().then(function() {
-                            // Hide the play indicator when video starts
-                            $('.hero-video-bg').addClass('video-playing');
-                        }).catch(function(error) {
-                            console.log('Manual play failed:', error);
-                        });
-                    }
-                });
-                
-                // Hide play indicator when video starts playing
-                heroVideo.addEventListener('play', function() {
-                    $('.hero-video-bg').addClass('video-playing');
-                });
-                
-                // Show play indicator when video is paused
-                heroVideo.addEventListener('pause', function() {
-                    $('.hero-video-bg').removeClass('video-playing');
-                });
+                // Pause video on mobile for better performance
+                heroVideo.pause();
             }
         }
     });
