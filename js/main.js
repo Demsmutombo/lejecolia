@@ -143,6 +143,34 @@
             }
         });
 
+        // Video Play Button
+        $('#playVideo').on('click', function() {
+            const video = $(this).closest('.video-container').find('video')[0];
+            const container = $(this).closest('.video-container');
+            
+            if (video.paused) {
+                video.play();
+                container.addClass('playing');
+                $(this).hide();
+            } else {
+                video.pause();
+                container.removeClass('playing');
+                $(this).show();
+            }
+        });
+
+        // Hide play button when video starts playing
+        $('.video-container video').on('play', function() {
+            $(this).closest('.video-container').addClass('playing');
+            $(this).closest('.video-container').find('.btn-play-video').hide();
+        });
+
+        // Show play button when video is paused
+        $('.video-container video').on('pause', function() {
+            $(this).closest('.video-container').removeClass('playing');
+            $(this).closest('.video-container').find('.btn-play-video').show();
+        });
+
     });
     
 })(jQuery);

@@ -140,16 +140,27 @@
                 </div>
             </nav>
 
-            <div class="container-xxl py-5 bg-dark hero-header mb-5">
-                <div class="container text-center my-5 pt-5 pb-4">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Food Menu</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Menu</li>
-                        </ol>
-                    </nav>
+            <div class="hero-video-bg position-relative">
+                <!-- Video Background -->
+                <video autoplay muted loop playsinline class="hero-video-bg-video">
+                    <source src="./img/vid1.mp4" type="video/mp4">
+                </video>
+                
+                <!-- Dark Overlay -->
+                <div class="hero-overlay"></div>
+                
+                <!-- Content -->
+                <div class="container-xxl py-5 hero-content position-relative">
+                    <div class="container text-center my-5 pt-5 pb-4">
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Notre Menu</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center text-uppercase">
+                                <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+                                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                                <li class="breadcrumb-item text-white active" aria-current="page">Menu</li>
+                            </ol>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
@@ -160,8 +171,8 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
-                    <h1 class="mb-5">Most Popular Items</h1>
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Menu Gastronomique</h5>
+                    <h1 class="mb-5">Nos Plats les Plus Populaires</h1>
                 </div>
                 <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
                     <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
@@ -502,67 +513,85 @@
         
 
         <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
-                        <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="">Reservation</a>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
-                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
-                        <p>09AM - 09PM</p>
-                        <h5 class="text-light fw-normal">Sunday</h5>
-                        <p>10AM - 08PM</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
-                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                        <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <footer class="footer-modern bg-dark text-light py-5">
             <div class="container">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-brand mb-4">
+                            <h4 class="text-primary fw-bold mb-3">Lejecolia</h4>
+                            <p class="text-light-75 mb-4">Restaurant gastronomique à Kinshasa, RDC. Une expérience culinaire unique alliant tradition et modernité.</p>
+                            <div class="social-links">
+                                <a href="#" class="social-link me-3"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link me-3"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link me-3"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                            </div>
                         </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-links">
+                            <h6 class="text-primary fw-bold mb-3">Navigation</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="index.html" class="footer-link">Accueil</a></li>
+                                <li class="mb-2"><a href="about.html" class="footer-link">À propos</a></li>
+                                <li class="mb-2"><a href="menu.html" class="footer-link">Menu</a></li>
+                                <li class="mb-2"><a href="service.html" class="footer-link">Services</a></li>
+                                <li class="mb-2"><a href="team.html" class="footer-link">Équipe</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-contact">
+                            <h6 class="text-primary fw-bold mb-3">Contact</h6>
+                            <div class="contact-item mb-3">
+                                <i class="fa fa-map-marker-alt text-primary me-2"></i>
+                                <span>Kinshasa, République Démocratique du Congo</span>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class="fa fa-envelope text-primary me-2"></i>
+                                <span>lejecolia243@gmail.com</span>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class="fa fa-phone text-primary me-2"></i>
+                                <span>+243 XXX XXX XXX</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-hours">
+                            <h6 class="text-primary fw-bold mb-3">Horaires</h6>
+                            <div class="hours-item mb-2">
+                                <span class="fw-semibold">Lun - Jeu:</span>
+                                <span class="text-light-75">12h00 - 22h30</span>
+                            </div>
+                            <div class="hours-item mb-2">
+                                <span class="fw-semibold">Ven - Dim:</span>
+                                <span class="text-light-75">12h00 - 23h00</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="fw-semibold">Fermé:</span>
+                                <span class="text-light-75">Mardi</span>
                             </div>
                         </div>
                     </div>
                 </div>
+                <hr class="my-4 border-secondary">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="mb-0 text-light-75">
+                            &copy; 2024 <span class="text-primary fw-bold">Lejecolia</span>. Tous droits réservés.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <div class="footer-bottom-links">
+                            <a href="booking.html" class="footer-link me-3">Réservation</a>
+                            <a href="contact.html" class="footer-link me-3">Contact</a>
+                            <a href="testimonial.html" class="footer-link">Témoignages</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </footer>
         <!-- Footer End -->
 
 
